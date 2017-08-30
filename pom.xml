@@ -27,7 +27,7 @@
         </dependency> 
     </dependencies>
     <build>
-        <plugins>
+<!--        <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -48,7 +48,7 @@
                     <imageName>tehreemnisa/mavenproject2</imageName>
                     <baseImage>frolvlad/alpine-oraclejdk8:slim</baseImage>
                     <entryPoint>["java", "-Dspring.profiles.active=local", "-DCCP_CONFIG_FILE=configCCP.xml", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
-                    <!-- copy the service's jar file from target into the root directory of the image --> 
+                     copy the service's jar file from target into the root directory of the image  
                     <resources>
                         <resource>
                             <targetPath>/</targetPath>
@@ -60,6 +60,6 @@
             </plugin>
 
             
-        </plugins>
+        </plugins>-->
     </build>
 </project>
